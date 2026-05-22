@@ -554,3 +554,45 @@ footer a:hover {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
+
+/* 針對手機等窄螢幕的響應式樣式 */
+@media (max-width: 600px) {
+    header {
+        padding: 1.5rem 1rem 1rem;
+    }
+    
+    main {
+        padding: 0 1rem 2rem;
+        gap: 1.5rem;
+    }
+    
+    .card {
+        padding: 1.25rem;
+    }
+    
+    /* 讓解析度與品質選單在手機上改為垂直排列，避免超出螢幕 */
+    .params-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .format-grid {
+        gap: 0.5rem;
+    }
+    
+    .format-btn {
+        padding: 1rem 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .dropzone {
+        padding: 2.5rem 1rem;
+    }
+    
+    .file-details {
+        gap: 1rem;
+        padding: 1rem;
+    }
+}
+
